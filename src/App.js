@@ -1,9 +1,14 @@
 
-import './App.css';
+import './App.css'; 
+import { AuthContextProvider } from './components/context/AuthContext';
+import Header from './components/Layout/header';
 
 function App() {
+  console.log('App LOADED')
   return (
-    <h1>Manage Your Budget</h1>
+    <AuthContextProvider>
+        <Header />
+    </AuthContextProvider>
   );
 }
 
