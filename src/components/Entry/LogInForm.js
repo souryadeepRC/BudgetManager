@@ -4,6 +4,7 @@ import useInput from "../../hooks/Use-input"
 import AuthContext from "../context/AuthContext"
 import Input from "../Generic/Input"
 
+import classes from './Form.module.css'
 const isEmpty = value => value !== ''
 const isEmail = value => value.includes('@')
 const EMAIL_INPUT_PROPS = {
@@ -17,7 +18,6 @@ const PASSWORD_INPUT_PROPS = {
     ErrorMsg: 'Enter a password'
 }
 const LogInForm = props => {
-    console.log('LogInForm LOADED')
     const authCtx = useContext(AuthContext)
     const [credentialValidity,setCredentialValidity] = useState(false)
     const emailInput = useInput(isEmail)
@@ -34,9 +34,9 @@ const LogInForm = props => {
     }
     return (
         <form onSubmit={logInHandler}>
-            <h1>Log In</h1>
-            {credentialValidity && <h6>Wrong Credentials</h6>}
-            <div>
+            <h1 className={classes.form__header}>LOG IN</h1>
+            {credentialValidity && <h6 className={classes.form__wrong_credential}>Wrong Credentials</h6>}
+            <div className={classes.form__content}>
                 <Input
                     label={EMAIL_INPUT_PROPS.label}
                     input={{
@@ -60,7 +60,7 @@ const LogInForm = props => {
                     isValidInput={passwordInput.hasError}
                 />
             </div>
-            <div>
+            <div className={classes.form__btn_container}>
                 <button type='submit' onClick={logInHandler} disabled={!isFormValid}>Log In</button>
                 <button onClick={props.onHide}>Cancel</button>
             </div>

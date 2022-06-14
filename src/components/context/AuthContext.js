@@ -31,7 +31,6 @@ export const AuthContextProvider = props => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [userName, setUserName] = useState('')
     useEffect(() => {
-        console.log(localStorage.getItem('isLoggedIn'));
         if (localStorage.getItem('isLoggedIn') !== null) {
             setIsLoggedIn(true)
             setUserName(convertToText(localStorage.getItem('isLoggedIn')))

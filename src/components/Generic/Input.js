@@ -1,10 +1,12 @@
+
+import classes from './Input.module.css'
 const Input = props => {
     return (
-        <div>
+        <div className={classes.input__box}>
             <label>{props.label}</label>
             <input 
                 {...props.input}/>
-            {props.isValidInput && <p>{props.errorMessage}</p>}
+            {props.isValidInput && <p className={classes.input__error_message}>{props.errorMessage}</p>}
         </div>
     )
 }

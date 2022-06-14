@@ -1,13 +1,12 @@
 
-import './App.css'; 
+import './App.css';
 import { AuthContextProvider } from './components/context/AuthContext';
-import Header from './components/Layout/header';
+import Header from './components/Layout/Header';
 
 function App() {
-  console.log('App LOADED')
   return (
     <AuthContextProvider>
-        <Header />
+      <Header />
     </AuthContextProvider>
   );
 }

@@ -1,0 +1,35 @@
+.btn__container {
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+
+}
+
+@media screen and (min-width:800px) {
+    .btn__container {
+        width: 30%;
+    }
+}
+
+.btn__container>button {
+    padding: 8px 15px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+.btn__container>button:nth-child(2) {
+    border: 1px solid white;
+}
+
+.btn__container>button:hover {
+    color: gray;
+    border-color: gray;
+}

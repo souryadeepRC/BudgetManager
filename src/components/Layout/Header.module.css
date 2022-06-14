@@ -1,0 +1,131 @@
+.header__container {
+    background: #0f163e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Tahoma;
+    height: fit-content;
+}
+
+.header__text_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.header__text_box>p {
+    margin: 0;
+    width:20%;
+    text-align: center;
+}
+
+.header__text_box>h1 {
+    font-size: 14px;
+    padding: 8px 0;
+    margin: 0;
+    width:80%;
+    text-align: center;
+}
+
+
+.user_controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    height: fit-content;
+    border: none;
+    background: transparent;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.user_controls>h4 {
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.logout_btn {
+    width: 100%;
+    padding: 0.25rem 1rem;
+    margin: 5px 0 0;
+    border-radius: 17px;
+    border: none;
+    background: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+.logout_btn:hover {
+    background: gray;
+}
+
+@media screen and (min-width:425px) {
+    .header__text_box{
+        border: none;
+    }
+    .header__text_box>h1 {
+        font-size: 16px;
+    } 
+} 
+
+@media screen and (min-width:800px) {
+
+    .user_controls {
+        flex-direction: row;
+        background: whitesmoke;
+        border-radius: 25px;
+        color: black;
+        padding: 0;
+    }
+
+    .logout_btn {
+        background: #c1c1c1;
+        margin: 0;
+        padding: 15px 0;
+    }
+}
+
+
+
+@media screen and (min-width:520px) {
+    .header__container {
+        height: 12vh;
+    }
+
+    /*  .user_controls {
+        width: 25vw;
+    } */
+}
+
+
+
+@media screen and (min-width:426px) {
+    .header__container {
+        flex-direction: row;
+        padding: 0 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:528px) and (max-width:799px) {
+    /*   .user_controls {
+        width: 45vw;
+    }   */
+}

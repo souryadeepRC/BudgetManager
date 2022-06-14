@@ -1,0 +1,12 @@
+.navigation__link {
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75vw;
+    font-family: Tahoma;
+}
+
+.navigation__link>p {
+    margin: 8px 0;
+}
