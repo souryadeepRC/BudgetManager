@@ -1,0 +1,33 @@
+.spinner__text {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: calc(44% + 2vmin);
+  top: calc(44% + 2vmin);
+  margin-top: -25px;
+  margin-left: -25px;
+  font-size: calc(68px + 2vmin);
+  color: #51376ae8;
+}
+@media screen  and (min-width:425px){
+  .spinner__text {
+    left: 50%;
+    top: 50%;
+  }
+}
+.spinner {
+  animation: spin infinite 1.5s linear;
+
+  /*You can increase or decrease the timer (5s) to 
+     increase or decrease the speed of the spinner*/
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

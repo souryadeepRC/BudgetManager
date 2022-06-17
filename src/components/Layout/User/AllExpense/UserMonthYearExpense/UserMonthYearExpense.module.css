@@ -1,0 +1,20 @@
+.expense__filter_section{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.expense__filter_section>select{
+    width: 40vw;
+    padding: 7px 6px;
+    border: 1px solid darkgray;
+    border-radius: 7px 7px 0 0;
+    background-color: transparent;
+}
+
+.expense__filter_section>select::selection{
+    background: white;
+}
+.expense__filter_section>select:focus-visible{
+    outline: none;
+}

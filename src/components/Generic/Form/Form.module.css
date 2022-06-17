@@ -1,0 +1,43 @@
+.form__header{
+    text-align: center;
+    font-family: Tahoma;
+    border-bottom: 1px solid gray;
+    padding: 9px;
+    margin: 0;
+    font-size: 22px;
+}
+.form__wrong_credential{
+    margin: 0;
+    background: mistyrose;
+    padding: 5px 0;
+    text-align: center;
+    color: #7c1818;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.form__content{
+    padding: 5px 0;
+}
+.form__btn_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+}
+.form__btn_container>button{
+    padding: 10px 23px;
+    background: #71e3d3;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+.form__btn_container>button:hover{
+    background: #2fcbb5;
+}
+.form__btn_container>button:disabled{
+    background: #dfdfdf;
+    cursor: not-allowed;
+}

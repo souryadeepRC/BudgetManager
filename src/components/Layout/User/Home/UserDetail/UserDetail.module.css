@@ -1,0 +1,42 @@
+.user__detail {
+    font-family: Tahoma;
+}
+
+.user__detail__header {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.user__detail__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media screen and (min-width:425px) {
+
+    .user__detail__info {
+        flex-direction: row;
+    }
+}
+
+.user__detail__info>div {
+    font-weight: bold;
+    word-break: break-word;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.user__detail__info>div>article:nth-child(2) {
+    font-weight: normal;
+}
+.error_message{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+    background: mistyrose;
+    padding: 1rem 0;
+}

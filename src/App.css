@@ -1,0 +1,58 @@
+* {
+    font-family: Tahoma;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.error_page_container {
+    text-align: center;
+    font-weight: bold;
+}
+
+.error_page_container>header {
+    padding: 1rem 0;
+    font-size: calc(14px + 2vmin);
+}
+
+.error_page_image {
+    padding: 1rem 0;
+    font-size: calc(14px + 2vmin);
+}
+
+.error_page_image>img {
+    width: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #0f163e;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    width: 4px;
+    background: lightblue;
+    border-radius: 5px;
+}
+.message__text{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+    background: mistyrose;
+    padding: 1rem 0;
+}
+.error_message {
+    color: brown;
+    background: mistyrose;
+}
+.norecord_message{
+    color: #0f163e;
+    background: white;
+}

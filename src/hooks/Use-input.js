@@ -11,6 +11,9 @@ const inputReducer = (state, action) => {
     if (action.type === 'BLUR') {
         return { value: state.value, isTouched: true }
     }
+    if (action.type === 'RESET') {
+        return initialState
+    }
     return initialState
 }
 const useInput = validateValue => {
@@ -22,6 +25,9 @@ const useInput = validateValue => {
     const onBlurHandler = () => {
         dispatch({ type: 'BLUR' })
     }
+    const onResetHandler = () => {
+        dispatch({ type: 'RESET' })
+    }
     const isValidData = validateValue(inputState.value)
 
     const hasError = !isValidData && inputState.isTouched
@@ -29,8 +35,10 @@ const useInput = validateValue => {
         value : inputState.value,
         isValidData,
         hasError,
+        isTouched : inputState.isTouched,
         onChangeHandler,
-        onBlurHandler
+        onBlurHandler,
+        onResetHandler
     }
 }
 export default useInput

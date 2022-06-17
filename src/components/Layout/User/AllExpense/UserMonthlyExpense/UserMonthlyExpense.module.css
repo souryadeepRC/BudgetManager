@@ -1,0 +1,28 @@
+.expense__detail {
+    font-family: tahoma;
+}
+
+.expense__detail>header {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.expense__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+@media screen and (min-width:425px) {
+
+    .expense__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-height: 70vh;
+    }
+}

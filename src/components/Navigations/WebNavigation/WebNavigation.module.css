@@ -1,0 +1,8 @@
+.navbar {
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75vw;
+    font-family: Tahoma;
+}

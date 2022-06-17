@@ -1,0 +1,59 @@
+.dashboard__container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.dashboard__filter__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.dashboard__filter__container>select {
+    width: 50%;
+    padding: 5px 5px;
+    border: 1px solid #3f813f;
+}
+
+.dashboard__filter__container>select:focus-visible {
+    outline: none;
+}
+
+.month_wiseBreakup_link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.month_wiseBreakup_link>button {
+    background: #1d2656;
+    width: 85%;
+    font-size: 11px;
+    font-family: Tahoma;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #dbf3db;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:800px){
+    .dashboard__container {
+        width: 60%;
+    }
+}
+@media screen and (min-width:425px) {
+    .dashboard__filter__container>select {
+        width: 25%;
+    }
+
+    .month_wiseBreakup_link>button {
+        width: 45%;
+        font-size: 14px;
+    }
+}

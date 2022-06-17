@@ -1,0 +1,39 @@
+.expense__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.form__content>div {
+    margin: 15px 0;
+}
+
+.expense__form label {
+    font-size: 15px;
+}
+
+.expense__form input {
+    font-size: 16px;
+}
+
+@media screen and (min-width:425px) and (max-width:800px) {
+    .expense__form {
+        width: 55vw;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .expense__form {
+        width: 45vw;
+    }
+}
+
+.message__success{
+    background: lightgreen !important;
+    color: darkgreen !important;
+}
+.message__error{
+    background: mistyrose;
+    color: brown;
+}

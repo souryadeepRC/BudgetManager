@@ -1,0 +1,41 @@
+.input__box{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+}
+.input__box>label{
+    font-size: 13px;
+    color: #044f8b;
+    font-weight: bold;
+    font-family: Tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.input__box>label>span{
+    font-size: 8px;
+    color: #080b1f;
+}
+.input__box> input{
+    border: 1px solid #1d5785;
+    padding: 6px 8px;
+    margin: 4px 0 0;
+    border-radius: 3px;
+    font-family: Tahoma;
+}
+.input__box> input:focus-visible,
+.input__box> input:focus{
+    outline: none !important;
+    border-color: #1d5785 !important;
+}
+.input__box> input::selection {
+    background: rgb(210, 255, 248);
+}
+.input__error_message{
+    margin: 0;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+}
