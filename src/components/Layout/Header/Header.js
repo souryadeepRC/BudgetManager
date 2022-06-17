@@ -25,7 +25,7 @@ const Header = () => {
     } 
     const logOutHandler = () => {
         authCtx.onLogout()
-        history.push('/home')
+        history.push('/BudgetManager/home')
     }
     const userDetailContent = (
         <div className={classes.user_controls}>

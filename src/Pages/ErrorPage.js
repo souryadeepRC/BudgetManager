@@ -6,7 +6,7 @@ const ErrorPage = () => {
     return (
         <div className='error_page_container'>
             <header>Sorry for this inconvenience</header>
-            <article onClick={() => history.push('/home')}>Click here to Redirect to our landing page</article>
+            <article onClick={() => history.push('/BudgetManager/home')}>Click here to Redirect to our landing page</article>
             <div className='error_page_image'>
                 <img src={errorPageImage} alt='Sorry for your trouble' />
             </div>
