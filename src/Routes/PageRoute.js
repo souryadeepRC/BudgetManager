@@ -14,19 +14,19 @@ const PageRoute = () => {
         <Suspense fallback={<Spinner />}>
             <Switch>
 
-                <Route path='/BudgetManager/' exact>
-                    <Redirect to='/BudgetManager/home' />
+                <Route path='/' exact>
+                    <Redirect to='/home' />
                 </Route>
-                <Route path='/BudgetManager/home' exact>
+                <Route path='/home' exact>
                     <HomePage />
                 </Route>
-                <Route path='/BudgetManager/add-expense' exact>
+                <Route path='/add-expense' exact>
                     <AddExpensePage />
                 </Route>
-                <Route path='/BudgetManager/expenses' exact>
+                <Route path='/expenses' exact>
                     <AllExpensePage />
                 </Route>
-                <Route path='/BudgetManager/*'>
+                <Route path='*'>
                     <ErrorPage />
                 </Route>
             </Switch>

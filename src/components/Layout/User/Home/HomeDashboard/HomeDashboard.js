@@ -115,7 +115,7 @@ const HomeDashboard = props => {
     }
 
     const showMonthWiseBreakup = () => {
-        history.push('/BudgetManager/expenses')
+        history.push('/expenses')
     }
     const isInvalidResponse = !selectedYearData || expenseData === undefined || isLoading
 

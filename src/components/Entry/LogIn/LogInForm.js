@@ -43,7 +43,7 @@ const LogInForm = props => {
         
         if(user && user!=null){
             authCtx.onLogin(user)
-            history.push(`/BudgetManager/home`)
+            history.push(`/home`)
         }else{
             setCredentialValidity(true)
         }
