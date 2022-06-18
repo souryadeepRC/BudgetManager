@@ -26,7 +26,7 @@ const PageRoute = () => {
                 <Route path='/BudgetManager/expenses' exact>
                     <AllExpensePage />
                 </Route>
-                <Route path='*'>
+                <Route path='/BudgetManager/*'>
                     <ErrorPage />
                 </Route>
             </Switch>
