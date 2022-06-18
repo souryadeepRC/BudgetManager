@@ -1,7 +1,7 @@
 {
   "name": "manage_budget",
   "version": "1.0.2",
-  "homepage": " https://souryadeeprc.github.io/BudgetManager",
+  "homepage": "https://souryadeeprc.github.io/BudgetManager",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
