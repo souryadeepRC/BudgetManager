@@ -11,13 +11,13 @@ const NavigationBar = props => {
         <nav className={`${props.className} ${classes.navigation__link}`}>
             <ul>
                 <li onClick={clickMenuHandler}>
-                    <NavLink to={`/BudgetManager/home`} activeClassName={classes.active}>Home</NavLink>
+                    <NavLink to={`/home`} activeClassName={classes.active}>Home</NavLink>
                 </li>
                 <li onClick={clickMenuHandler}>
-                    <NavLink to='/BudgetManager/add-expense' activeClassName={classes.active}>Add Expense</NavLink>
+                    <NavLink to='/add-expense' activeClassName={classes.active}>Add Expense</NavLink>
                 </li>
                 <li onClick={clickMenuHandler}>
-                    <NavLink to='/BudgetManager/expenses' activeClassName={classes.active}>View Expense</NavLink>
+                    <NavLink to='/expenses' activeClassName={classes.active}>View Expense</NavLink>
                 </li> 
             </ul>
         </nav>
